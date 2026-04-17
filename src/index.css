@@ -1,15 +1,15 @@
+@import 'tailwindcss';
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
+  --text: #f1f1f1;
+  --text-h: #f1f1f1;
+  --bg: #222222;
+  --border: #ff4c0d;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -41,8 +41,7 @@
     --accent-bg: rgba(192, 132, 252, 0.15);
     --accent-border: rgba(192, 132, 252, 0.5);
     --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 
   #social .button-icon {
@@ -51,11 +50,10 @@
 }
 
 #root {
-  width: 1126px;
+  width: 1440px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -108,4 +106,310 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image206 {
+  width: 1440px;
+}
+
+/* ─── HEADER / NAVBAR ─────────────────────────────────── */
+.Header {
+  width: 100%;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.Navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.NavLinks {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.NavLinks li a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* ─── ABOUT SECTION ───────────────────────────────────── */
+.max-w-4xl h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.max-w-4xl h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* ─── REVIEWS SECTION ─────────────────────────────────── */
+.Rectangle1,
+.Rectangle2,
+.Rectangle3 {
+  width: 460px;
+  height: 294px;
+  border-radius: 15px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.Rectangle1 h2,
+.Rectangle2 h2,
+.Rectangle3 h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.Rectangle1 p,
+.Rectangle2 p,
+.Rectangle3 p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+/* ─── ORANGE LINES ────────────────────────────────────── */
+.OrangeLine1 {
+  width: 100%;
+  height: 2px;
+  background-color: #ff4c0d;
+  margin: 8px 0;
+}
+
+/* ─── BUTTONS CONTAINER ───────────────────────────────── */
+.ButtonsContainer {
+  display: flex;
+  align-items: center;
+  padding: 32px 140px;
+  gap: 16px;
+}
+
+.FeedbackButton1 {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: auto;
+  transition: background-color 0.3s ease;
+}
+
+.Left,
+.Right {
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* ─── QUESTION SECTION ────────────────────────────────── */
+.QuestionSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 40px;
+  padding: 80px 140px;
+  align-items: start;
+}
+
+.RANDOMADDQUESTION {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.QuestionSection > .questionButton1 {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+}
+
+.QuestionSection h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.QuestionSection h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.questionButton1 {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* ─── ANSWER SECTION ──────────────────────────────────── */
+.AnswerSection {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.AnswerSection h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.OrangeLine2-1,
+.OrangeLine2-2,
+.OrangeLine2-3,
+.OrangeLine2-4 {
+  width: 100px;
+  height: 3px;
+  background-color: #ff4c0d;
+  margin: 4px 0;
+}
+
+.AnswerSection p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+/* ─── PRODUCT SECTION ─────────────────────────────────── */
+.ProductSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 140px;
+  gap: 12px;
+}
+
+.ProductSection h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.ProductSection p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.BuyButton {
+  margin-top: 24px;
+  width: 160px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+/* ─── FOOTER ──────────────────────────────────────────── */
+.Footer {
+  width: 100%;
+  padding: 60px 140px 32px;
+}
+
+.FooterContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.FooterLogo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.FooterLinks h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.FooterLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterLinks ul li a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.FooterBottom {
+  padding-top: 24px;
+}
+
+.FooterBottom > p {
+  display: none;
+}
+
+.FooterMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.FooterMetaBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterMetaBlock--left {
+  text-align: left;
+}
+
+.FooterMetaBlock--right {
+  margin-left: auto;
+  text-align: right;
+}
+
+.FooterBottom p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(241, 241, 241, 0.72);
 }
