@@ -34,6 +34,11 @@ background: #F1F1F1;
 border: none;
 cursor: pointer;
 z-index: 2;
+text-decoration: none;
+}
+.buy:hover{
+background: #945a45;
+color: #F1F1F1;
 }
 .title-about{
 position: absolute;
@@ -50,6 +55,10 @@ top: 56px;
 left: 350px;
 cursor: pointer;
 z-index: 10;
+text-decoration: none;
+}
+.title-about:hover{
+color: #FF4C0D;
 }
 .title-settings{
 position: absolute;
@@ -66,6 +75,10 @@ top: 56px;
 left: 500px;
 cursor: pointer;
 z-index: 10;
+text-decoration: none;
+}
+.title-reviews:hover{
+color: #FF4C0D;
 }
 .title-reviews{
 position: absolute;
@@ -81,6 +94,10 @@ letter-spacing: -1%;
 color: #F1F1F1;
 cursor: pointer;
 z-index: 10;
+text-decoration: none;
+}
+.title-settings:hover{
+color: #FF4C0D;
 }
 .title{
 position: absolute;
@@ -308,4 +325,45 @@ height: 325px;
 opacity: 1;
 top: 1500px;
 right: 20px;
+}
+/* кнопка купить */
+.page{
+display: flex;
+flex-direction: column;
+align-items: center;    /* Центр горизонтально */
+justify-content: center; /* Центр вертикально */
+min-height: 100vh;  
+gap: 20px;              /* Відступи між блоками name, phone, address */
+font-family: sans-serif;
+color: #d0653e;
+}
+.order .h1{
+font-size: 28px;
+margin-bottom: 25px;
+}
+.name, .phone, .address {
+display: flex;
+flex-direction: column;
+width: 300px; 
+gap: 8px;
+}
+.name input, .phone input, .address input{
+border-radius: 10px;
+font-size: 15px;
+padding: 12px;
+border: 1px solid #ccc;
+}
+.sentBtn{
+border: none;
+border-radius: 20px;
+background: #c64516;
+color: #F1F1F1;
+width: 200px;
+height: 50px;
+cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
