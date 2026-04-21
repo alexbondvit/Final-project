@@ -1,0 +1,34 @@
+import { Link } from 'react-router-dom';
+
+function Main() {
+  return (
+    <div className='relative w-[1440px] mx-auto'>
+      <header className='w-full'>
+        <nav className='flex items-center justify-between w-full max-w-[1440px] mx-auto px-4'>
+          <div className='Logo'></div>
+          <ul className='flex justify-center space-x-8 flex-1'>
+            <li>
+              <Link to='/' style={{ color: 'black' }} className='hover:text-blue-500'>
+                Interact 1
+              </Link>
+            </li>
+            <li>
+              <Link to='/look' style={{ color: 'black' }} className='hover:text-blue-500'>
+                Interact 2
+              </Link>
+            </li>
+            <li>
+              <Link to='/xiaomi' style={{ color: 'black' }} className='hover:text-blue-500'>
+                О бренде
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <h1>Main Page - coming soon</h1>
+    </div>
+  );
+}
+
+export default Main;

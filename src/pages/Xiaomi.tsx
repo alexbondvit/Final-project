@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import image206 from '../assets/image206.png';
 import LogoImage from '../assets/logoImage.png';
 import BikeWhite from '../assets/BikeWhite.png';
@@ -14,19 +15,19 @@ function Xiaomi() {
           <div className='Logo'></div>
           <ul className='flex justify-center space-x-8 flex-1'>
             <li>
-              <a href='#about' style={{ color: 'black' }} className='hover:text-blue-500'>
+              <Link to='/' style={{ color: 'black' }} className='hover:text-blue-500'>
                 Interact 1
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#reviews' style={{ color: 'black' }} className='hover:text-blue-500'>
+              <Link to='/look' style={{ color: 'black' }} className='hover:text-blue-500'>
                 Interact 2
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#faq' style={{ color: 'black' }} className='hover:text-blue-500'>
+              <Link to='/xiaomi' style={{ color: 'black' }} className='hover:text-blue-500'>
                 О бренде
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
