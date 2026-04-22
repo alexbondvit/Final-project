@@ -9,97 +9,100 @@ import PathImage22 from '../assets/path2-1.png';
 function Xiaomi() {
   return (
     <div className='relative w-[1440px] mx-auto'>
-      {/* Header */}
-      <header className='w-full'>
-        <nav className='flex items-center justify-between w-full max-w-[1440px] mx-auto px-4'>
-          <div className='Logo'></div>
-          <ul className='flex justify-center space-x-8 flex-1'>
-            <li>
-              <Link to='/' style={{ color: 'black' }} className='hover:text-blue-500'>
-                Interact 1
-              </Link>
-            </li>
-            <li>
-              <Link to='/look' style={{ color: 'black' }} className='hover:text-blue-500'>
-                Interact 2
-              </Link>
-            </li>
-            <li>
-              <Link to='/xiaomi' style={{ color: 'black' }} className='hover:text-blue-500'>
-                О бренде
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
 
       {/* Hero Image + About Section overlaid */}
-      <div className='relative w-full'>
-        
-        {/* Decorative Path */}
-        <img
-          src={PathImage}
-          alt='Path'
-          style={{
-            position: 'absolute',
-            width: '300px',
-            top: '600px',
-            left: '1140px',
-            zIndex: 5,
-          }}
-        />
-        <img
-  src={PathImage2}
-  alt='Path2'
-  style={{
-    position: 'absolute',
-    top: '1805px',
-    opacity: 1,
-    zIndex: 0,
-    pointerEvents: 'none',
-  }}
-/>
-<img 
-src={PathImage22}
-alt='Path22'
-style={{
-  zIndex: 3,
-  width: '145px',
-  height: '115px',
-  position: 'absolute',
-  top: '1972px',
-  left: '1167.8px',
-  transform: 'rotate(2deg)',
-  pointerEvents: 'none',
-}}
-/>
-        <img src={image206} alt='Xiaomi' className='w-full h-auto' style={{ margin: '0' }} />
+<div className='relative w-full'>
 
-        {/* Logo */}
-        <img
-          src={LogoImage}
-          alt='Logo'
-          className='absolute'
-          style={{ width: '60px', height: '39px', top: '120px', left: '180px', opacity: 1 }}
-        />
+  {/* NAVBAR INSIDE IMAGE */}
+  <header className='xiaomi-nav-oval'>
+    <nav>
+      <ul>
+        <li>
+          <Link to='/' className='xiaomi-nav-link'>О продукте</Link>
+        </li>
+        <li>
+          <Link to='/look' className='xiaomi-nav-link'>Вид и безопасность</Link>
+        </li>
+        <li>
+          <Link to='/xiaomi' className='xiaomi-nav-link'>Отзывы и FAQ</Link>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        {/* About Section */}
-        <div id='about' className='absolute bottom-[60px] left-[180px]'>
-          <h1 className='text-left' style={{ color: '#FF4C0D', fontSize: '45px' }}>
-            О бренде Xiaomi
-          </h1>
-          <h2 className='text-left' style={{ fontSize: '14px', color: 'black' }}>
-            Компания Xiaomi была основана предпринимателем Лей Цзюнем
-            <br />
-            в 2010 году под девизом - «Инновации для всех».
-            <br />
-            <br />
-            Мы верим, что высококачественные продукты и передовые технологии
-            <br />
-            должны быть доступны каждому.
-          </h2>
-        </div>
-      </div>
+  {/* Decorative Path */}
+  <img
+    src={PathImage}
+    alt='Path'
+    style={{
+      position: 'absolute',
+      width: '300px',
+      top: '600px',
+      left: '1140px',
+      zIndex: 5,
+    }}
+  />
+
+  <img
+    src={PathImage2}
+    alt='Path2'
+    style={{
+      position: 'absolute',
+      top: '1805px',
+      opacity: 1,
+      zIndex: 0,
+      pointerEvents: 'none',
+    }}
+  />
+
+  <img
+    src={PathImage22}
+    alt='Path22'
+    style={{
+      zIndex: 3,
+      width: '145px',
+      height: '115px',
+      position: 'absolute',
+      top: '1972px',
+      left: '1167.8px',
+      transform: 'rotate(2deg)',
+      pointerEvents: 'none',
+    }}
+  />
+
+  <img
+    src={image206}
+    alt='Xiaomi'
+    className='w-full h-auto'
+    style={{ margin: '0' }}
+  />
+
+  {/* Logo */}
+  <img
+    src={LogoImage}
+    alt='Logo'
+    className='absolute'
+    style={{ width: '60px', height: '39px', top: '120px', left: '180px' }}
+  />
+
+  {/* About Section */}
+  <div id='about' className='absolute bottom-[60px] left-[180px]'>
+    <h1 className='text-left' style={{ color: '#FF4C0D', fontSize: '45px' }}>
+      О бренде Xiaomi
+    </h1>
+
+    <h2 className='text-left' style={{ fontSize: '14px', color: 'black' }}>
+      Компания Xiaomi была основана предпринимателем Лей Цзюнем
+      <br />
+      в 2010 году под девизом - «Инновации для всех».
+      <br />
+      <br />
+      Мы верим, что высококачественные продукты и передовые технологии
+      <br />
+      должны быть доступны каждому.
+    </h2>
+  </div>
+</div>
 
       {/* Reviews Section */}
       <div id='reviews' className='w-full mt-12 overflow-hidden'>
@@ -182,7 +185,7 @@ style={{
             borderRadius: '50%',
             transform: 'rotate(-90deg)',
             filter: 'blur(200px)', 
-            zIndex: -1,
+            zIndex: 1,
             pointerEvents: 'none',
           }}
         />
@@ -202,7 +205,7 @@ style={{
             transform: 'rotate(90deg)',
 
             filter: 'blur(200px)', 
-            zIndex: -1,
+            zIndex: 5,
             pointerEvents: 'none',
           }}
         />

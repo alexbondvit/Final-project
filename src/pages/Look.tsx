@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 
 function Look() {
   return (
@@ -9,17 +9,17 @@ function Look() {
           <ul className='flex justify-center space-x-8 flex-1'>
             <li>
               <Link to='/' style={{ color: 'black' }} className='hover:text-blue-500'>
-                Interact 1
+                О продукте
               </Link>
             </li>
             <li>
               <Link to='/look' style={{ color: 'black' }} className='hover:text-blue-500'>
-                Interact 2
+                Вид и безопасность
               </Link>
             </li>
             <li>
               <Link to='/xiaomi' style={{ color: 'black' }} className='hover:text-blue-500'>
-                О бренде
+                Отзывы и FAQ
               </Link>
             </li>
           </ul>

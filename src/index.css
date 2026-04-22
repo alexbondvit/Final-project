@@ -1,3 +1,4 @@
+
 @import 'tailwindcss';
 :root {
   --text: #f1f1f1;
@@ -60,10 +61,11 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+body{
+height: 100vh;
+  background: #222222;
+width: 1440px;
 }
-
 h1,
 h2 {
   font-family: var(--heading);
@@ -135,10 +137,13 @@ code {
   justify-content: space-between;
 }
 
-.Logo {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 2px;
+.Logo{
+position: absolute;
+width: 60px;
+height: 39px;
+opacity: 1;
+top: 47px;
+left: 140px;
 }
 
 .NavLinks {
@@ -176,6 +181,7 @@ code {
   border-radius: 15px;
   padding: 24px;
   box-sizing: border-box;
+  z-index: 6;
 }
 
 .Rectangle1 h2,
@@ -220,7 +226,6 @@ code {
   margin-right: auto;
   transition: background-color 0.3s ease;
 }
-
 .Left,
 .Right {
   width: 54px;
@@ -338,6 +343,31 @@ code {
   transition: background-color 0.3s ease;
 }
 
+.buy{
+position: absolute;
+width: 122px;
+height: 54px;
+opacity: 1;
+top: 40px;
+left: 1178px;
+gap: 10px;
+border-radius: 65px;
+padding-top: 15px;
+padding-right: 35px;
+padding-bottom: 15px;
+padding-left: 35px;
+color:#151515;
+background: #F1F1F1;
+border: none;
+cursor: pointer;
+z-index: 2;
+text-decoration: none;
+}
+
+.buy:hover{
+background: #945a45;
+color: #F1F1F1;
+}
 /* ─── FOOTER ──────────────────────────────────────────── */
 .Footer {
   width: 100%;
@@ -411,4 +441,398 @@ code {
   font-size: 13px;
   line-height: 1.5;
   color: rgba(241, 241, 241, 0.72);
+}
+.title-about{
+position: absolute;
+width: 75px;
+height: 21px;
+opacity: 1;
+font-family: Gilroy;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+letter-spacing: 1%;
+color: #F1F1F1;
+top: 56px;
+left: 350px;
+cursor: pointer;
+z-index: 10;
+text-decoration: none;
+}
+.title-about:hover{
+color: #FF4C0D;
+}
+.title-settings{
+position: absolute;
+height: 21px;
+width: 120px;
+opacity: 1;
+font-family: Gilroy;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+letter-spacing: -1%;
+color: #F1F1F1;
+top: 56px;
+left: 500px;
+cursor: pointer;
+z-index: 10;
+text-decoration: none;
+}
+.title-reviews:hover{
+color: #FF4C0D;
+}
+.title-reviews{
+position: absolute;
+top: 56px;
+left: 700px;
+height: 21px;
+opacity: 1;
+font-family: Gilroy;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+letter-spacing: -1%;
+color: #F1F1F1;
+cursor: pointer;
+z-index: 10;
+text-decoration: none;
+}
+.title-settings:hover{
+color: #FF4C0D;
+}
+.title{
+position: absolute;
+width: 1159px;
+height: 160px;
+opacity: 1;
+top: 220px;
+left: 140px;
+gap: 30px;
+font-family: Gilroy;
+font-weight: 600;
+font-size: 85px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #F1F1F1;
+z-index: 2;
+}
+.text1{
+position: absolute;
+width: 1159px;
+height: 144px;
+opacity: 1;
+top: 470px;
+left: 140px;
+gap: 30px;
+font-family: Gilroy;
+font-weight: 600;
+font-size: 30px;
+line-height: 120%;
+letter-spacing: 0%;
+color: #FF4C0D;
+z-index: 10;
+}
+.Samokat{
+position: absolute;
+width: 1146px;
+height: 829px;
+opacity: 1;
+left: 373px;
+filter: brightness(0.9);
+}
+.text2{
+position: absolute;
+width: 1160px;
+height: 150px;
+opacity: 1;
+top: 918px;
+left: 140px;
+font-family: Gilroy;
+font-weight: 500;
+font-size: 45px;
+line-height: 114%;
+letter-spacing: 1%;
+color: #F1F1F1;
+}
+.block1{
+cursor: pointer;
+opacity: 0.4;
+transition: 0.3s ease;
+}
+.block1:hover{
+  opacity: 1;
+}
+.block1 h3{
+position: absolute;
+width: 207px;
+height: 24px;
+opacity: 1;
+top: 1135px;
+left: 140px;
+font-family: Gilroy;
+font-weight: 600;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0%;
+color: #F1F1F1;
+}
+.block1 p{
+position: absolute;
+width: 360px;
+height: 126px;
+opacity: 1;
+top: 1185px;
+left: 140px;
+font-family: Gilroy;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+letter-spacing: 1%;
+color: #F1F1F1;
+}
+.line{
+position: absolute;
+width: 360px;
+height: 3px;
+opacity: 1;
+top: 1169px;
+left: 140px;
+background: #F1F1F1;
+border: none;
+}
+.block1:hover .line{
+background: #FF4C0D;
+}
+.block2{
+cursor: pointer;
+opacity: 0.4;
+transition: 0.3s ease;
+}
+.block2:hover{
+opacity: 1;
+}
+.block2 h3{
+position: absolute;
+width: 324px;
+height: 24px;
+opacity: 1;
+font-family: Gilroy;
+font-weight: 600;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0%;
+color: #F1F1F1;
+top: 1135px;
+left: 540px;
+}
+.block2 hr{
+position: absolute;
+width: 360px;
+height: 3px;
+opacity: 1;
+background: #F1F1F1;
+top: 1169px;
+left: 540px;
+border: none;
+}
+.block2:hover hr{
+background: #FF4C0D;
+}
+.block2 p{
+position: absolute;
+width: 360px;
+height: 84px;
+opacity: 1;
+font-family: Gilroy;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+letter-spacing: 1%;
+color: #F1F1F1;
+top: 1185px;
+left: 540px;
+}
+.block3{
+cursor: pointer;
+opacity: 0.4;
+transition: 0.3s ease;
+}
+.block3:hover{
+opacity: 1;
+}
+.block3 h3{
+position: absolute;
+width: 164px;
+height: 24px;
+opacity: 1;
+font-family: Gilroy;
+font-weight: 600;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0%;
+top: 1135px;
+left: 940px;
+color: #F1F1F1;
+}
+.block3 hr{
+position: absolute;
+width: 360px;
+height: 3px;
+opacity: 1;
+top: 1169px;
+left: 940px;
+background-color: #F1F1F1;
+border: none;
+}
+.block3:hover hr{
+background-color: #FF4C0D;
+}
+.block3 p{
+position: absolute;
+width: 360px;
+height: 63px;
+opacity: 1;
+font-family: Gilroy;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+letter-spacing: 1%;
+color: #F1F1F1;
+top: 1185px;
+left: 940px;
+}
+.foto{
+position: absolute;
+width: 760px;
+height: 400px;
+opacity: 1;
+top: 1341px;
+left: 140px;
+border-radius: 15px;
+z-index: 3;
+}
+.foto1{
+position: absolute;
+width: 360px;
+height: 300px;
+opacity: 1;
+top: 1341px;
+left: 940px;
+border-radius: 15px;
+}
+.art{
+position: absolute;
+width: 1602px;
+height: 325px;
+opacity: 1;
+top: 1500px;
+right: 20px;
+}
+/* кнопка купить */
+.page{
+display: flex;
+flex-direction: column;
+align-items: center;    /* Центр горизонтально */
+justify-content: center; /* Центр вертикально */
+min-height: 100vh;  
+gap: 20px;              /* Відступи між блоками name, phone, address */
+font-family: sans-serif;
+color: #d0653e;
+}
+.order .h1{
+font-size: 28px;
+margin-bottom: 25px;
+}
+.name, .phone, .address {
+display: flex;
+flex-direction: column;
+width: 300px; 
+gap: 8px;
+}
+.name input, .phone input, .address input{
+border-radius: 10px;
+font-size: 15px;
+padding: 12px;
+border: 1px solid #ccc;
+}
+.sentBtn{
+border: none;
+border-radius: 20px;
+background: #c64516;
+color: #F1F1F1;
+width: 200px;
+height: 50px;
+cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hero {
+  position: relative;
+}
+
+/* OVAL NAVBAR */
+.nav-oval {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 999px;
+
+  padding: 12px 40px;
+
+  z-index: 10;
+}
+
+/* LINKS */
+.nav-oval ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ff4c0d;
+}
+
+.xiaomi-nav-oval {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 999px;
+
+  padding: 12px 40px;
+
+  z-index: 100;
+}
+
+.xiaomi-nav-oval ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.xiaomi-nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.xiaomi-nav-link:hover {
+  color: #ff4c0d;
 }
