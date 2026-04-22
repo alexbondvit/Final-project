@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom';
 import samokat from '../assets/BikeMain.png';
 import foto from '../assets/Rectangle 23.png';
 import foto1 from '../assets/Rectangle 24.png';
-import art from '../assets/Path.png';
+import art from '../assets/PathBottom.png';
 import logo from '../assets/Group 13 (2).png'
+import './main.css';
 
 function Main() {
   return (
@@ -35,6 +36,7 @@ function Main() {
         </header>
 
         {/* HERO TEXT */}
+        <div className='title-content'>
         <h1 className='title'>
           Стильный электросамокат <br />
           с мощным аккумулятором
@@ -46,7 +48,7 @@ function Main() {
           Работает так же просто, <br />
           как и выглядит.
         </h3>
-
+        </div>
         {/* HERO IMAGE */}
         <img src={samokat} className='Samokat' />
 

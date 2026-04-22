@@ -74,7 +74,9 @@ function Xiaomi() {
     src={image206}
     alt='Xiaomi'
     className='w-full h-auto'
-    style={{ margin: '0' }}
+    style={{ margin: '0', 
+             alignItems: 'center',
+    }}
   />
 
   {/* Logo */}

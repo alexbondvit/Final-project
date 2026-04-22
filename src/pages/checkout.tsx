@@ -1,7 +1,10 @@
+import './main.css'
+
 function Checkout() {
+
     return (
         <div className="page">
-            <form onSubmit={(e) => {e.preventDefault(); e.currentTarget.reset(); alert('Заказ принят!')}}>
+            <form className="checkout-form" onSubmit={(e) => {e.preventDefault(); e.currentTarget.reset(); alert('Заказ принят!')}}>
         <div className="order">
             <h1>Оформление заказа</h1>
         </div>
